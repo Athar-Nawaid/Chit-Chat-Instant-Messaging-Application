@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+main{
+    display: none;
+    padding: 10px;
+   
+}
+#main-container{
+    border: solid black 2px;
+    height: 97vh;
+    width: 70vw;
+    margin-right: 2vh;
+    background-image: url('./Src/61f00c583e000_thumb900.webp');
+    display: flex;
+    flex-direction: column;
+}
+#online-container{
+    border: solid black 2px;
+    width: 25vw;
+    height: fit-content;
+}
+
+header{
+   
+    background-color: rgb(30, 139, 103);
+    padding: 2vh 3vw 4vh 2vw;
+    color: white;
+    font-size: 2vw;
+}
+h5{
+    position: absolute;
+    font-size: 2.5vh;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    /* position: absolute;
+    top: 90vh; */
+}
+footer input{
+    width: 80%;
+    padding: 1vh 2vh;
+    border-radius: 1vw;
+    background-color: rgb(209, 203, 203);
+    font-size: 1.2vw;
+    margin: 1.2vh;
+}
+
+#send{
+   padding: 1vh 2vw;
+   border-radius: 1vw;
+   font-size: 1.2vw;
+   margin: 5px;
+   color: white;
+   background-color: rgb(30, 139, 103);
+}   
+
+#conUsers{
+    text-align: center;
+    padding: 2vh 0;
+    background-color: rgb(30, 139, 103);
+    color: white;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 1vw;
+    background-color: aquamarine;
+    
+}
+
+.logged-in {
+    color: rgb(0, 190, 0);
+    font-size: 1.5vw;
+}
+
+.msg-item{
+    display: flex;
+}
+#messages{
+    min-height: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    /* border: solid red 5px; */
+    height: 73vh;
+}
+.avatar{
+    border: #000 solid 2px;
+    width: 46px;
+    height: 46px;
+    border-radius: 46px;
+    background-color: aqua;
+    margin: 5px 1vw;
+}
+.message{
+    width: fit-content;
+    max-width: 60%;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 15px;
+    color: #000;
+    word-wrap: break-word;
+ 
+}
+.in{
+    background-color: rgb(225, 212, 231);
+}
+
+.out{
+    background-color: antiquewhite;
+}
+.outgoing{
+    
+    align-self: flex-end;
+    margin-right: 1vw;
+}
+.incoming{
+    
+    align-self: flex-start;
+    /* margin-left: 1vw; */
+}
+.notification{
+    background-color: rgb(194, 194, 194);
+    width: fit-content;
+    margin: 0.5vh auto;
+    padding: 0.5vh 1vh;
+    border-radius: 5px;
+}
+
+.name-time{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Login Page */
+
+nav{
+    background-color: rgb(30, 139, 103);
+    color: white;
+    padding: 3vw 1vw;
+}
+#loginPage{
+    background-image: url('./61f00c583e000_thumb900.webp');
+    height: 100vh;
+}
+#login-cont{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#login-cont input{
+    width: 20vw;
+    padding: 1vh 1vw;
+    border-radius: 1vw;
+    font-size: 1.5vw;
+}
+
+#btnChat{
+    padding: 1vh 1vw;
+    margin: 1vw;
+    border-radius: 1vw;
+    background-color: rgb(26, 180, 129);
+    font-size: 1.2vw;
+    color: rgb(0, 0, 0);
+}
+
+
+
+@media only screen and (max-width: 800px){
+    main{
+        flex-direction: column;
+    }
+    #main-container{
+        width: 93vw;
+    }
+    #online-container{
+        width: 100vw;
+    }
+
+    header h1{
+        font-size: 5vw;
+    }
+    footer{
+        width: 98%;
+    }
+    
+    #text{
+        width: 75vw;
+        font-size: 3vw;
+    }
+    #send{
+        font-size: 2.1vw;
+    }
+    #login-cont{
+       
+        height: 80%;
+    }
+
+    #login-cont input{
+        width: 60vw;
+        padding: 1.5vh 1vw;
+        border-radius: 2vw;
+        font-size: 2.5vw;
+    }
+    #btnChat{
+        padding: 1vh 1vw;
+        margin: 1vw;
+        border-radius: 1vw;
+        background-color: rgb(26, 180, 129);
+        font-size: 2.5vw;
+        color: rgb(0, 0, 0);
+    }
+    #online-container{
+        width: 93vw;
+        margin-top:2vw
+    }
+    
+}

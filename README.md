@@ -1,1 +1,1 @@
-# Chit-Chat-Instant-Messaging-Application
+# Chatter-App
